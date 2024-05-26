@@ -81,7 +81,11 @@
     document.addEventListener('DOMContentLoaded', function() {
         Prism.highlightAll();
     });
-
+    // Solid link click event
+    $('#SolidsLink').on('click', function() {
+        var submenu = $('#SolidSubmenu');
+        submenu.slideToggle();
+    });
     // Api link click event
     $('#ApisLink').on('click', function() {
         var submenu = $('#ApisSubmenu');

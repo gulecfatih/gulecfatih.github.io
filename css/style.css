@@ -388,7 +388,7 @@ a:focus {
 
 .large-btn .btn {
     position: relative;
-    width: 50%;
+    width: 100%;
     padding: 15px 0;
     color: #FF6F61;
     font-size: 20px;
@@ -766,7 +766,7 @@ a:focus {
 
 .portfolio .portfolio-item {
     position: relative;
-    height: 250px;
+    height: 100px;
     overflow: hidden;
 }
 

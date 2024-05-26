@@ -25,6 +25,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <div class="wrapper">
+
 <!-- Sidebar Start -->
 <div class="sidebar">
     <div class="sidebar-content">
@@ -44,18 +45,15 @@
                     <li class="nav-item">
                         <a class="nav-link" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'" href="Nesne Yönelimli Programlama (OOP)’nin Temel Prensipleri.html" id="proje1Link">Nesne Yönelimli Programlama (OOP)’nin Temel Prensipleri</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'" href="Solid Nedir Solid Yazılım Prensipleri Nelerdir.html" id="proje1Link">Solid Nedir ? Solid Yazılım Prensipleri Nelerdir ?</a>
-                    </li>
                      <!-- Solid başlığı -->
                    <li class="nav-item">
-                    <a class="nav-link" href="#" id="ApisLink">SOLID Yazılım Prensipleri</a>
-                    <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="/Pages/Solid/Single Responsibility Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Single Responsibility Principle</a></li>
-                        <li><a href="/Pages/Solid\Open-Closed Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Open-Closed Principle</a></li>
-                        <li><a href="/Pages/Solid\Liskov Substitution Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Liskov Substitution Principle</a></li>
-                        <li><a href="/Pages/Solid\Interface Segregation Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Interface Segregation Principle</a></li>
-                        <li><a href="/Pages/Solid\Dependency Inversion Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Dependency Inversion Principle</a></li>
+                    <a class="nav-link" href="#" id="SolidsLink">SOLID Yazılım Prensipleri</a>
+                    <ul class="submenu" id="SolidSubmenu" style="display: none;">
+                        <li><a href="Single Responsibility Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Single Responsibility Principle</a></li>
+                        <li><a href="Open-Closed Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Open-Closed Principle</a></li>
+                        <li><a href="Liskov Substitution Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Liskov Substitution Principle</a></li>
+                        <li><a href="Interface Segregation Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Interface Segregation Principle</a></li>
+                        <li><a href="Dependency Inversion Principle.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">Dependency Inversion Principle</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -63,11 +61,11 @@
                    <li class="nav-item">
                     <a class="nav-link" href="#" id="ApisLink">API Mimari Stilleri</a>
                     <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="/Pages/Api/ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
-                        <li><a href="/Pages/Api/Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
-                        <li><a href="/Pages/Api/Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
-                        <li><a href="/Pages/Api/Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
-                        <li><a href="/Pages/Api/GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
+                        <li><a href="ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
+                        <li><a href="Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
+                        <li><a href="Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
+                        <li><a href="Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
+                        <li><a href="GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -95,43 +93,22 @@
     <div class="content-inner" style="background-color: white;">
         <div class="header">
             <div class="content-inner">
-                 <h1>SOLID Prensipleri</h1>
+                <h3 style="font-weight: bold;">API Nedir?</h3><br>
+                <p>API Nasıl Çalışır?</p>
             </div>
         </div>
-        <div><ol>
-            <p>SOLID prensipleri, yazılım geliştirme ve özellikle nesne yönelimli programlama (OOP) alanında önemli bir rol oynar. SOLID prensipleri, yazılımın esnek, sürdürülebilir, okunabilir ve yeniden kullanılabilir olmasını sağlamak için geliştirilen bir dizi tasarım prensibidir.</p>
-            <p>SOLID prensipleri, sıkı bağlantıyı (tight coupling) azaltmaya ve gevşek bağlantıyı (loose coupling) kullanmaya yardımcı olur.</p>
-            <p>Sıkı bağlantı, bir sınıfın veya modülün diğer sınıflara veya modüllere güçlü bir şekilde bağımlı olduğu durumları ifade eder. Bu durumda, bir değişiklik yapmak veya bir sınıfı değiştirmek diğer bağımlı sınıfları etkileyebilir ve büyük bir kod değişikliği gerektirebilir. Kodunuzda bundan kaçınmanız gerekir.</p>
-            <p>Gevşek bağlantı ise bir sınıfın veya modülün dışarıdan bağımlılıkları azaltıldığında veya soyutlanarak bağımsız hale getirildiğinde ortaya çıkar. Bu durumda, bir sınıfın veya modülün içinde yapılan değişiklikler diğer bağımlı bileşenlere çok az veya hiç etki etmez. Bu, kodunuzdaki değişiklikleri en aza indirir, kodun daha yeniden kullanılabilir, bakımı yapılabilir, esnek ve kararlı olmasına yardımcı olur.</p>
-            <p>Yazılım geliştirme alanında “Solid” terimi, SOLID prensiplerine atıfta bulunur. SOLID, yazılım tasarımı ve kodlama için kullanılan beş temel prensibi ifade eder.</p>
-                <!-- Single Responsibility Principle Start -->
-                
-            <h3>(S) Single Responsibility Principle (Tek Sorumluluk Prensibi - SRP)</h3><br>
-
-            <p style="font-style: italic; font-weight: bold; background-color: #f0f0f0;">Bir sınıfın sadece bir sorumluluğu olmalıdır.</p><br>
-            <pre><code class="language-csharp">
-public class LogModifier
-{
-    public string ModifyLogMessage(string originalMessage)
-    {
-        // Log mesajını düzenleme işlemleri
-    }
-}
-
-public class DatabaseSave
-{
-    public void SaveToDatabase(string message)
-    {
-        // Veritabanına yazma işlemleri
-    }
-}
-            </code></pre>
-			<br>
-            <p>Elimizde iki farklı sınıf bulunmaktadır. İlk sınıf, loglama işleminin tamamlandığı noktada string ifademizi düzenleyen bir sınıftır. Bu düzenleme işlemi sırasında (Harfleri büyültülebilir, bazı karakterleri yok edilebilir veya eklenebilir) gibi işlemler uygulanabilir. Diğer sınıf ise, bu düzenlenmiş ifadeyi veritabanına kaydetme işlemini gerçekleştirir. Bu iki işlem farklı olduğu için her biri için ayrı bir sınıf kullanılmalıdır. Veritabanı işlemlerini yapan sınıf sadece veritabanı işlemleri yapmalı, log düzenlemeyi gerçekleştiren sınıf ise sadece log düzenleme işlevini yerine getirmelidir.</p>
-			<!-- Single Responsibility Principle Finish -->
-           
-            </ol>
+        <div>
+            <ol>
+                <p>İki ayrı uygulamanın birbiriyle konuşması için bir aracıya ihtiyacı vardır. Bu nedenle, geliştiriciler genellikle bir sistemin diğerinin bilgilerine veya fonksiyonlarına erişmesine izin vermek için köprüler — Uygulama Programlama Arayüzleri (API'ler) — oluşturur.</p>
+                <p>Uygulamaları hızlı ve geniş ölçekte entegre etmek için API'ler, kablo üzerinden iletilen mesajların anlambilimini ve sözdizimini tanımlamak için protokoller ve/veya spesifikasyonlar kullanılarak gerçekleştirilir. Bu özellikler API mimarisini oluşturur.</p>
+                <h4 style="font-weight: bold;">API MİMARİSİ ZAMAN ÇİZELGESİ</h4><br>
+                <img src="img/Api Time.webp" width="720"> <br><br><br>
+                <h4 style="font-weight: bold;">API MİMARİ STİLLERİ</h4><br>
+                <img src="img/Api Architectural styles.webp" width="720"> <br><br><br>
+                <p>Zamanla, farklı API mimari stilleri yayınlandı. Her birinin kendi veri alışverişini standartlaştırma kalıpları vardır. Bir dizi seçenek, hangi mimari tarzın en iyi olduğu konusunda sonsuz tartışmalara yol açar.</p><br><br><br>
+            </ol> 
         </div>
+        
     </div>
 </div>
 <!-- Content End -->
@@ -157,6 +134,7 @@ public class DatabaseSave
 	<script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-csharp.min.js"></script>
 	<!-- Prism.js için bir tema dosyası -->
 	<link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" rel="stylesheet">
+
     
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
