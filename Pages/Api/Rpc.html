@@ -64,11 +64,11 @@
                    <li class="nav-item">
                     <a class="nav-link" href="#" id="ApisLink">API Mimari Stilleri</a>
                     <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
-                        <li><a href="Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
-                        <li><a href="Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
-                        <li><a href="Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
-                        <li><a href="GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
+                        <li><a href="/Pages/Solid/ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
+                        <li><a href="/Pages/Solid/Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
+                        <li><a href="/Pages/Solid/Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
+                        <li><a href="/Pages/Solid/Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
+                        <li><a href="/Pages/Solid/GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -97,39 +97,48 @@
     <div class="content-inner" style="background-color: white;">
         <div class="header">
             <div class="content-inner">
-                <h3  style="font-weight: bold;">Simple Object Access Protocol(SOAP) Basit Nesne Erişim Protokolü: Verileri Hizmet Olarak Kullanılabilir Hale Getirme</h3><br>
-                <p>SOAP Nasıl Çalışır?</p>
+                <h3  style="font-weight: bold;">Remote Procedure Call (RPC) Uzaktan Yordam Çağrısı Başka Bir Sistemdeki Bir Fonksiyon Çağırma</h3><br>
+                <p>RPC Nasıl Çalışır?</p>
             </div>
         </div>
-        <div>   
+        <div>
             <ol>
-                <p>SOAP, XML formatında veri aktarımını sağlar. Bir SOAP mesajı, zarf etiketi, gövde, başlık ve hata gibi unsurları içerir. Bu yapı, iletişim kurmak isteyen taraflar arasında standart bir formata sahip olmalarını sağlar. SOAP API mantığı, Web Hizmeti Açıklama Dili’nde (WSDL) yazılmıştır ve farklı programlama dilleri arasında iletişimi kolaylaştırır.</p><br>
-                <img src="img/Soap Xml.webp" width="720"> <br><br><br>
-               
-    <h4>SOAP’un Avantajları</h4><br>
-    <ul>
-        <li><strong>Dil ve Platformdan Bağımsızlık:</strong><br>SOAP, yerleşik işlevselliği sayesinde dil ve platformdan bağımsız iletişimi sağlar.</li>
-        <li><strong>Çeşitli Taşıma Protokollerine Bağlılık:</strong><br>SOAP, farklı senaryolara uyum sağlamak için aktarım protokolleri açısından esnektir.</li>
-        <li><strong>Yerleşik Hata İşleme:</strong><br>SOAP API spesifikasyonu, hataların belirtilmesine ve işlenmesine olanak tanır.</li>
-        <li><strong>Güvenlik Uzantıları:</strong><br>SOAP, WS-Security protokolleriyle entegre olabilir ve işlem güvenliğini sağlar.</li>
-    </ul>
-    <br>
-    <h4>SOAP’un Dezavantajları</h4><br>
-    <ul>
-        <li><strong>Yalnızca XML:</strong><br>SOAP mesajları, XML yapısı nedeniyle çok sayıda meta veri içerir.</li>
-        <li><strong>Ağır Ağırlık:</strong><br>SOAP, büyük boyutlu XML dosyaları nedeniyle büyük bir bant genişliği gerektirir.</li>
-        <li><strong>Dar Uzmanlık Bilgisi:</strong><br>SOAP API sunucuları oluşturmak, tüm protokollerin derinlemesine anlaşılmasını gerektirir.</li>
-        <li><strong>Bıktırıcı Mesaj Güncelleme</strong>:<br>SOAP şemasının katı yapısı, mesaj güncellemeleri için ek çaba gerektirir.</li>
-    </ul>
-    <br>
-    <h4>SOAP’un Kullanım Örnekleri</h4><br>
-    <p>SOAP mimarisi, özellikle kuruluşlar içinde veya güvenilir iş ortaklarıyla dahili entegrasyon için yaygın olarak kullanılmaktadır. Özellikle yüksek güvenlikli veri iletimi gerektiren alanlarda tercih edilmektedir.</p><br>
+                <p>İstemci uzak bir yordam başlatır, parametreleri ve ek bilgileri bir iletide seri hale getirir ve iletiyi bir sunucuya gönderir. Sunucu mesajı aldığında, içeriğinin seri durumunu kaldırır, istenen işlemi yürütür ve bir sonucu istemciye geri gönderir. Sunucu saplaması ve istemci saplaması, parametrelerin serileştirilmesi ve seri durumundan çıkarılmasıyla ilgilenir.</p>
 
-    <h4>Yüksek Güvenlikli Veri İletimi</h4><br>
-    <p>SOAP'un katı yapısı, güvenlik ve yetkilendirme özellikleri, API sağlayıcısı ile API tüketicisi arasındaki yasal sözleşmeye uyarken API ile müşteri arasında resmi bir yazılım sözleşmesinin uygulanması için onu en uygun seçenek haline getirir. Bu nedenle finansal kuruluşlar ve diğer kurumsal kullanıcılar SOAP’ı tercih ediyor.</p><br><br><br>
-    
-   
+                <img src="img/Rpc Client.webp" width="720"> <br><br><br>
 
+                <h4 style="font-weight: bold;">RPC Avantajları</h4><br>
+                <h5 style="font-weight: bold;">Doğrudan Ve Basit Etkileşim</h5>
+                <p>RPC, bilgi almak için GET’i ve diğer her şey için POST’u kullanır. Bir sunucu ile bir istemci arasındaki etkileşimin mekaniği, bir uç noktayı çağırmaya ve bir yanıt almaya indirgenir.</p>
+                <h5 style="font-weight: bold;">Kolay Eklenen Fonksiyon</h5>
+                <p>API’miz için yeni bir gereksinim alırsak, bu gereksinimi yerine getiren başka bir uç noktayı kolayca ekleyebiliriz:</p>
+                <ol>
+                <li>Yeni bir fonksiyon yazın ve onu bir uç noktanın arkasına atın</li>
+                <li>Şimdi bir müşteri bu uç noktaya ulaşabilir ve belirlenen gereksinimi karşılayan bilgiyi alabilir</li>
+                </ol>
+                <br>
+                <h5 style="font-weight: bold;">Yüksek Performans</h5>
+                <p>Hafif yükler, paylaşılan sunucular ve iş istasyonlarının ağlarında yürütülen paralel hesaplamalar için önemli olan yüksek performans sağlayarak ağda kolay hareket eder. RPC, ağ katmanını optimize edebilir ve farklı hizmetler arasında günde tonlarca mesaj göndererek çok verimli hale getirebilir.</p>
+
+                <h4 style="font-weight: bold;">RPC Dezavantajları</h4><br>
+
+                <h5 style="font-weight: bold;">Altta Yatan Sisteme Sıkı Bağlantı</h5>
+                <p>Bir API’nin soyutlama düzeyi, yeniden kullanılabilirliğine katkıda bulunur. Altta yatan sisteme ne kadar sıkı olursa, diğer sistemler için o kadar az yeniden kullanılabilir olacaktır. RPC’nin temeldeki sistemle sıkı bağlantısı, sistemdeki işlevler ile harici API arasında bir soyutlama katmanına izin vermez. Bu, temeldeki sistemle ilgili uygulama ayrıntılarını API’ye sızdırmak oldukça kolay olduğu için güvenlik sorunlarını gündeme getirir. Bir RPC’nin sıkı bağlantısı, ölçeklenebilirlik gereksinimlerinin ve gevşek bağlı ekiplerin elde edilmesini zorlaştırır. Bu nedenle, müşteri ya belirli bir uç noktayı çağırmanın olası yan etkileri hakkında endişelenir ya da sunucunun işlevlerini nasıl adlandırdığını anlamadığı için hangi uç noktayı arayacağını bulmaya çalışır.</p>
+                
+                <h5 style="font-weight: bold;">Düşük Keşfedilebilirlik:</h5>
+                <p>RPC’de API’yi incelemenin veya bir istek göndermenin ve isteklerine göre hangi fonksiyon çağrılacağını anlamaya başlamanın bir yolu yoktur.</p>
+                
+                <h5 style="font-weight: bold;">Fonksiyon Patlaması:</h5>
+                <p>Yeni fonksiyon oluşturmak çok kolay. Bu nedenle, mevcut olanları düzenlemek yerine, anlaşılması zor, üst üste binen işlevlerden oluşan devasa bir listeyle sonuçlanan yenilerini oluşturuyoruz.</p>
+                <br>
+                <h5 style="font-weight: bold;">RPC KULLANIM ÖRNEKLERİ</h5>
+                <p>RPC modeli 80'lerde kullanılmaya başlandı, ancak bu onu otomatik olarak geçersiz kılmaz. Google, Facebook (Apache Thrift) ve Twitch (Twirp) gibi büyük şirketler, son derece yüksek performanslı, düşük maliyetli mesajlaşma gerçekleştirmek için dahili olarak RPC yüksek performanslı değişkenlerini kullanıyor. Devasa mikro hizmet sistemleri, kısa mesajlarla düzenlenirken dahili iletişimin net olmasını gerektirir.</p>
+
+                <h5 style="font-weight: bold;">Komut API’sı</h5>
+                <p>RPC, uzak bir sisteme komut göndermek için uygun seçimdir. Örneğin, bir Slack veya Discord API’sı çok komut odaklıdır: Bir kanala katılın, bir kanaldan ayrılın, bir mesaj gönderin. Bu nedenle, Slack veya Discord API’nin tasarımcıları, onu RPC benzeri bir tarzda modelleyerek onu küçük, sıkı ve kullanımı kolay hale getirdi.</p>
+
+                <h5 style="font-weight: bold;">Dahili Mikro Hizmetler İçin Müşteriye Özel API’ler</h5>
+                <p>Tek bir sağlayıcı ile tüketici arasında doğrudan entegrasyona sahip olduğumuz için, bir REST API’sinin yaptığı gibi kablo üzerinden çok fazla meta veri iletmek için çok fazla zaman harcamak istemiyoruz. Yüksek mesaj hızı ve mesaj performansı ile gRPC ve Twirp, mikro hizmetler için güçlü örneklerdir. Başlık altında HTTP 2 kullanan gRPC, ağ katmanını optimize edebilir ve farklı hizmetler arasında günde tonlarca mesaj göndererek çok verimli hale getirebilir. Ancak, yüksek ağ performansını değil, son derece ayırt edici mikro hizmetler yayınlayan ekipler arasında istikrarlı bir API bağlantısını hedefliyorsanız, REST bunu sağlayacaktır.</p><br><br>
             </ol>
         </div>
         

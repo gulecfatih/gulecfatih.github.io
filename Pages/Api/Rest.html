@@ -64,11 +64,11 @@
                    <li class="nav-item">
                     <a class="nav-link" href="#" id="ApisLink">API Mimari Stilleri</a>
                     <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
-                        <li><a href="Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
-                        <li><a href="Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
-                        <li><a href="Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
-                        <li><a href="GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
+                        <li><a href="/Pages/Solid/ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
+                        <li><a href="/Pages/Solid/Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
+                        <li><a href="/Pages/Solid/Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
+                        <li><a href="/Pages/Solid/Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
+                        <li><a href="/Pages/Solid/GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -91,55 +91,60 @@
 <!-- Sidebar End -->
 
 
-
 <!-- Content Start -->
 <div class="content">
     <div class="content-inner" style="background-color: white;">
         <div class="header">
             <div class="content-inner">
-                <h3  style="font-weight: bold;">Remote Procedure Call (RPC) Uzaktan Yordam Çağrısı Başka Bir Sistemdeki Bir Fonksiyon Çağırma</h3><br>
-                <p>RPC Nasıl Çalışır?</p>
+                <h3  style="font-weight: bold;">Representational State Transfer (REST) - Temsili Durum Aktarımı: Verileri Kaynak Olarak Kullanılabilir Hale Getirme</h3><br>
+                <p>REST Nasıl Çalışır?</p>
             </div>
         </div>
-        <div>
+        <div>   
             <ol>
-                <p>İstemci uzak bir yordam başlatır, parametreleri ve ek bilgileri bir iletide seri hale getirir ve iletiyi bir sunucuya gönderir. Sunucu mesajı aldığında, içeriğinin seri durumunu kaldırır, istenen işlemi yürütür ve bir sonucu istemciye geri gönderir. Sunucu saplaması ve istemci saplaması, parametrelerin serileştirilmesi ve seri durumundan çıkarılmasıyla ilgilenir.</p>
+                <p>REST, bir dizi mimari kısıtlamayla tanımlanan ve birçok API tüketicisi tarafından geniş çapta benimsenmesi amaçlanan, kendi kendini açıklayan bir API mimari stilidir.</p>
 
-                <img src="img/Rpc Client.webp" width="720"> <br><br><br>
+                <p>Bugün en yaygın API stili ilk olarak 2000 yılında Roy Fielding tarafından doktora tezinde tanımlanmıştır. REST, sunucu tarafı verilerini, genellikle JSON ve XML gibi basit biçimlerde temsil eden kullanılabilir hale getirir.</p>
 
-                <h4 style="font-weight: bold;">RPC Avantajları</h4><br>
-                <h5 style="font-weight: bold;">Doğrudan Ve Basit Etkileşim</h5>
-                <p>RPC, bilgi almak için GET’i ve diğer her şey için POST’u kullanır. Bir sunucu ile bir istemci arasındaki etkileşimin mekaniği, bir uç noktayı çağırmaya ve bir yanıt almaya indirgenir.</p>
-                <h5 style="font-weight: bold;">Kolay Eklenen Fonksiyon</h5>
-                <p>API’miz için yeni bir gereksinim alırsak, bu gereksinimi yerine getiren başka bir uç noktayı kolayca ekleyebiliriz:</p>
-                <ol>
-                <li>Yeni bir fonksiyon yazın ve onu bir uç noktanın arkasına atın</li>
-                <li>Şimdi bir müşteri bu uç noktaya ulaşabilir ve belirlenen gereksinimi karşılayan bilgiyi alabilir</li>
-                </ol>
+                <p>REST, SOAP kadar katı bir şekilde tanımlanmamıştır. RESTful mimarisi, altı mimari kısıtlamaya uymalıdır:</p>
+
+                <ul>
+                <li>Tek Tip Arayüz: Cihaz veya uygulama türünden bağımsız olarak belirli bir sunucuyla tek tip bir etkileşim yöntemine izin vermektedir.</li>
+                <li>Stateless: İsteği, isteğin kendisinde olduğu gibi ve sunucu oturumla ilgili herhangi bir şey depolamadan işlemek için gerekli durumdur.</li>
+                <li>İstemci-Sunucu Mimarisi: Her iki tarafın da bağımsız gelişimine izin vermektedir.</li>
+                <li>Önbelleğe Almak</li>
+                <li>Katmanlı Uygulama Sistemi</li>
+                <li>Sunucuların İstemciye Yürütülebilir Kod Sağlama Yeteneği</li>
+                <img src="img/Rest Api Architecture.webp" width="720"> <br><br><br>
+                <img src="img/The Rıchardson Maturity Model.webp" width="720"> <br><br><br>
+                </ul>
                 <br>
-                <h5 style="font-weight: bold;">Yüksek Performans</h5>
-                <p>Hafif yükler, paylaşılan sunucular ve iş istasyonlarının ağlarında yürütülen paralel hesaplamalar için önemli olan yüksek performans sağlayarak ağda kolay hareket eder. RPC, ağ katmanını optimize edebilir ve farklı hizmetler arasında günde tonlarca mesaj göndererek çok verimli hale getirebilir.</p>
-
-                <h4 style="font-weight: bold;">RPC Dezavantajları</h4><br>
-
-                <h5 style="font-weight: bold;">Altta Yatan Sisteme Sıkı Bağlantı</h5>
-                <p>Bir API’nin soyutlama düzeyi, yeniden kullanılabilirliğine katkıda bulunur. Altta yatan sisteme ne kadar sıkı olursa, diğer sistemler için o kadar az yeniden kullanılabilir olacaktır. RPC’nin temeldeki sistemle sıkı bağlantısı, sistemdeki işlevler ile harici API arasında bir soyutlama katmanına izin vermez. Bu, temeldeki sistemle ilgili uygulama ayrıntılarını API’ye sızdırmak oldukça kolay olduğu için güvenlik sorunlarını gündeme getirir. Bir RPC’nin sıkı bağlantısı, ölçeklenebilirlik gereksinimlerinin ve gevşek bağlı ekiplerin elde edilmesini zorlaştırır. Bu nedenle, müşteri ya belirli bir uç noktayı çağırmanın olası yan etkileri hakkında endişelenir ya da sunucunun işlevlerini nasıl adlandırdığını anlamadığı için hangi uç noktayı arayacağını bulmaya çalışır.</p>
-                
-                <h5 style="font-weight: bold;">Düşük Keşfedilebilirlik:</h5>
-                <p>RPC’de API’yi incelemenin veya bir istek göndermenin ve isteklerine göre hangi fonksiyon çağrılacağını anlamaya başlamanın bir yolu yoktur.</p>
-                
-                <h5 style="font-weight: bold;">Fonksiyon Patlaması:</h5>
-                <p>Yeni fonksiyon oluşturmak çok kolay. Bu nedenle, mevcut olanları düzenlemek yerine, anlaşılması zor, üst üste binen işlevlerden oluşan devasa bir listeyle sonuçlanan yenilerini oluşturuyoruz.</p>
+                <p>Aslında, bazı hizmetler yalnızca bir dereceye kadar RESTful’dur. Temelde RPC stili vardır, daha büyük hizmetleri kaynaklara bölerler ve HTTP altyapısını verimli bir şekilde kullanırlar. Ancak kilit kısım, Hypertext As The Engine of Application State’in kısaltması olan HATEOAS olarak da bilinen hiper ortam kullanmaktır. Temel olarak, her yanıtta, bir REST API’sinin API’nin nasıl kullanılacağına ilişkin tüm ilgili bilgilere bağlanan meta veriler sağladığı anlamına gelir. İstemci ve sunucunun birbirinden ayrılmasını sağlayan şey budur. Sonuç olarak, hem API sağlayıcısı hem de API tüketicisi, iletişimlerini engellemeden bağımsız olarak gelişebilir.</p>
+                <img src="img/Rest Post.webp" width="720"> <br><br><br>
+                <p>REST’te işler GET, POST, PUT, DELETE, OPTIONS ve PATCH gibi HTTP yöntemleri kullanılarak yapılır.</p>
                 <br>
-                <h5 style="font-weight: bold;">RPC KULLANIM ÖRNEKLERİ</h5>
-                <p>RPC modeli 80'lerde kullanılmaya başlandı, ancak bu onu otomatik olarak geçersiz kılmaz. Google, Facebook (Apache Thrift) ve Twitch (Twirp) gibi büyük şirketler, son derece yüksek performanslı, düşük maliyetli mesajlaşma gerçekleştirmek için dahili olarak RPC yüksek performanslı değişkenlerini kullanıyor. Devasa mikro hizmet sistemleri, kısa mesajlarla düzenlenirken dahili iletişimin net olmasını gerektirir.</p>
-
-                <h5 style="font-weight: bold;">Komut API’sı</h5>
-                <p>RPC, uzak bir sisteme komut göndermek için uygun seçimdir. Örneğin, bir Slack veya Discord API’sı çok komut odaklıdır: Bir kanala katılın, bir kanaldan ayrılın, bir mesaj gönderin. Bu nedenle, Slack veya Discord API’nin tasarımcıları, onu RPC benzeri bir tarzda modelleyerek onu küçük, sıkı ve kullanımı kolay hale getirdi.</p>
-
-                <h5 style="font-weight: bold;">Dahili Mikro Hizmetler İçin Müşteriye Özel API’ler</h5>
-                <p>Tek bir sağlayıcı ile tüketici arasında doğrudan entegrasyona sahip olduğumuz için, bir REST API’sinin yaptığı gibi kablo üzerinden çok fazla meta veri iletmek için çok fazla zaman harcamak istemiyoruz. Yüksek mesaj hızı ve mesaj performansı ile gRPC ve Twirp, mikro hizmetler için güçlü örneklerdir. Başlık altında HTTP 2 kullanan gRPC, ağ katmanını optimize edebilir ve farklı hizmetler arasında günde tonlarca mesaj göndererek çok verimli hale getirebilir. Ancak, yüksek ağ performansını değil, son derece ayırt edici mikro hizmetler yayınlayan ekipler arasında istikrarlı bir API bağlantısını hedefliyorsanız, REST bunu sağlayacaktır.</p><br><br>
+                <h4>REST  Avantajları</h4><br>
+                <ul>
+                <li><strong>Ayrılmış İstemci Ve Sunucu:</strong><br>İstemci ve sunucuyu mümkün olduğunca birbirinden ayıran REST, RPC’den daha iyi bir soyutlama sağlar. Soyutlama seviyelerine sahip bir sistem, özelliklerini daha iyi tanımlamak ve sürdürmek için ayrıntılarını kapsülleyebilir. Bu, bir REST API’sini istikrarlı bir sistem olarak kalırken zaman içinde gelişecek kadar esnek hale getirir.</li>
+                <li><strong>Keşfedilebilirlik:</strong><br>İstemci ve sunucu arasındaki iletişim, REST API ile nasıl etkileşim kurulacağını anlamak için hiçbir dış belge gerekmeyecek şekilde her şeyi açıklar.</li>
+                <li><strong>Önbellek Dostu:</strong><br>Birçok HTTP aracını yeniden kullanan REST, verileri HTTP düzeyinde önbelleğe almaya izin veren tek stildir. Buna karşılık, başka herhangi bir API’de önbelleğe alma uygulaması, ek bir önbellek modülünün yapılandırılmasını gerektirecektir.</li>
+                <li><strong>Çoklu Format Desteği:</strong><br>Verileri depolamak ve değiş tokuş etmek için birden çok formatı destekleyebilme yeteneği, REST’in şu anda genel API’ler oluşturmak için geçerli bir seçim olmasının nedenlerinden biridir.</li>
+                </ul>
+                <br>
+                <h4>REST Dezavantajları</h4><br>
+                <ul>
+                <li><strong>Tek Bir REST Yapısı Yok:</strong><br>REST API oluşturmanın kesin ve doğru bir yolu yoktur. Kaynakların nasıl modelleneceği ve hangi kaynakların modelleneceği her senaryoya bağlı olacaktır. Bu, REST’i teoride basitleştirir, ancak pratikte zorlaştırır.</li>
+                <li><strong>Büyük Yükler:</strong><br>REST, müşterinin uygulamanın durumu hakkında gerekli olan her şeyi yalnızca yanıtlarından anlayabilmesi için çok sayıda zengin meta veri döndürür. Ve bu gevezelik, çok fazla bant genişliği kapasitesine sahip büyük bir ağ borusu için önemli değil. Ancak durum her zaman böyle değildir. Bu, Facebook’un 2012'de GraphQL stilinin açıklamasını bulması için ana itici faktördü.</li>
+                <li><strong>Fazla Ve Az Getirme Sorunları:</strong><br>Çok fazla veya yetersiz veri içeren REST yanıtları, genellikle başka bir istek için ihtiyaç yaratır.</li>
+                </ul>
+                <br>
+                <h4>REST KULLANIM DURUMLARI</h4><br>
+                <ul>
+                <li><strong>Yönetim API’leri:</strong><br> Bir sistemdeki nesneleri yönetmeye odaklanan ve birçok tüketiciye yönelik API’ler en yaygın API türüdür. REST, bu tür API’lerin güçlü keşfedilebilirliğe, iyi belgelere sahip olmasına yardımcı olur ve bu nesne modeline iyi uyum sağlar.</li>
+                <li><strong>Basit Kaynak Odaklı Uygulamalar:</strong><br>REST, sorgularda esnekliğe ihtiyaç duymayan kaynak odaklı uygulamaları bağlamak için değerli bir yaklaşımdır.</li>
+                </ul>
             </ol>
+            <br><br><br>
         </div>
         
     </div>

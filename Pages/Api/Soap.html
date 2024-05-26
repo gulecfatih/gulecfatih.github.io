@@ -64,11 +64,11 @@
                    <li class="nav-item">
                     <a class="nav-link" href="#" id="ApisLink">API Mimari Stilleri</a>
                     <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
-                        <li><a href="Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
-                        <li><a href="Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
-                        <li><a href="Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
-                        <li><a href="GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
+                        <li><a href="/Pages/Solid/ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
+                        <li><a href="/Pages/Solid/Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
+                        <li><a href="/Pages/Solid/Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
+                        <li><a href="/Pages/Solid/Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
+                        <li><a href="/Pages/Solid/GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -91,25 +91,46 @@
 <!-- Sidebar End -->
 
 
+
 <!-- Content Start -->
 <div class="content">
     <div class="content-inner" style="background-color: white;">
         <div class="header">
             <div class="content-inner">
-                <h3 style="font-weight: bold;">API Nedir?</h3><br>
-                <p>API Nasıl Çalışır?</p>
+                <h3  style="font-weight: bold;">Simple Object Access Protocol(SOAP) Basit Nesne Erişim Protokolü: Verileri Hizmet Olarak Kullanılabilir Hale Getirme</h3><br>
+                <p>SOAP Nasıl Çalışır?</p>
             </div>
         </div>
-        <div>
+        <div>   
             <ol>
-                <p>İki ayrı uygulamanın birbiriyle konuşması için bir aracıya ihtiyacı vardır. Bu nedenle, geliştiriciler genellikle bir sistemin diğerinin bilgilerine veya fonksiyonlarına erişmesine izin vermek için köprüler — Uygulama Programlama Arayüzleri (API'ler) — oluşturur.</p>
-                <p>Uygulamaları hızlı ve geniş ölçekte entegre etmek için API'ler, kablo üzerinden iletilen mesajların anlambilimini ve sözdizimini tanımlamak için protokoller ve/veya spesifikasyonlar kullanılarak gerçekleştirilir. Bu özellikler API mimarisini oluşturur.</p>
-                <h4 style="font-weight: bold;">API MİMARİSİ ZAMAN ÇİZELGESİ</h4><br>
-                <img src="img/Api Time.webp" width="720"> <br><br><br>
-                <h4 style="font-weight: bold;">API MİMARİ STİLLERİ</h4><br>
-                <img src="img/Api Architectural styles.webp" width="720"> <br><br><br>
-                <p>Zamanla, farklı API mimari stilleri yayınlandı. Her birinin kendi veri alışverişini standartlaştırma kalıpları vardır. Bir dizi seçenek, hangi mimari tarzın en iyi olduğu konusunda sonsuz tartışmalara yol açar.</p><br><br><br>
-            </ol> 
+                <p>SOAP, XML formatında veri aktarımını sağlar. Bir SOAP mesajı, zarf etiketi, gövde, başlık ve hata gibi unsurları içerir. Bu yapı, iletişim kurmak isteyen taraflar arasında standart bir formata sahip olmalarını sağlar. SOAP API mantığı, Web Hizmeti Açıklama Dili’nde (WSDL) yazılmıştır ve farklı programlama dilleri arasında iletişimi kolaylaştırır.</p><br>
+                <img src="img/Soap Xml.webp" width="720"> <br><br><br>
+               
+    <h4>SOAP’un Avantajları</h4><br>
+    <ul>
+        <li><strong>Dil ve Platformdan Bağımsızlık:</strong><br>SOAP, yerleşik işlevselliği sayesinde dil ve platformdan bağımsız iletişimi sağlar.</li>
+        <li><strong>Çeşitli Taşıma Protokollerine Bağlılık:</strong><br>SOAP, farklı senaryolara uyum sağlamak için aktarım protokolleri açısından esnektir.</li>
+        <li><strong>Yerleşik Hata İşleme:</strong><br>SOAP API spesifikasyonu, hataların belirtilmesine ve işlenmesine olanak tanır.</li>
+        <li><strong>Güvenlik Uzantıları:</strong><br>SOAP, WS-Security protokolleriyle entegre olabilir ve işlem güvenliğini sağlar.</li>
+    </ul>
+    <br>
+    <h4>SOAP’un Dezavantajları</h4><br>
+    <ul>
+        <li><strong>Yalnızca XML:</strong><br>SOAP mesajları, XML yapısı nedeniyle çok sayıda meta veri içerir.</li>
+        <li><strong>Ağır Ağırlık:</strong><br>SOAP, büyük boyutlu XML dosyaları nedeniyle büyük bir bant genişliği gerektirir.</li>
+        <li><strong>Dar Uzmanlık Bilgisi:</strong><br>SOAP API sunucuları oluşturmak, tüm protokollerin derinlemesine anlaşılmasını gerektirir.</li>
+        <li><strong>Bıktırıcı Mesaj Güncelleme</strong>:<br>SOAP şemasının katı yapısı, mesaj güncellemeleri için ek çaba gerektirir.</li>
+    </ul>
+    <br>
+    <h4>SOAP’un Kullanım Örnekleri</h4><br>
+    <p>SOAP mimarisi, özellikle kuruluşlar içinde veya güvenilir iş ortaklarıyla dahili entegrasyon için yaygın olarak kullanılmaktadır. Özellikle yüksek güvenlikli veri iletimi gerektiren alanlarda tercih edilmektedir.</p><br>
+
+    <h4>Yüksek Güvenlikli Veri İletimi</h4><br>
+    <p>SOAP'un katı yapısı, güvenlik ve yetkilendirme özellikleri, API sağlayıcısı ile API tüketicisi arasındaki yasal sözleşmeye uyarken API ile müşteri arasında resmi bir yazılım sözleşmesinin uygulanması için onu en uygun seçenek haline getirir. Bu nedenle finansal kuruluşlar ve diğer kurumsal kullanıcılar SOAP’ı tercih ediyor.</p><br><br><br>
+    
+   
+
+            </ol>
         </div>
         
     </div>

@@ -64,11 +64,11 @@
                    <li class="nav-item">
                     <a class="nav-link" href="#" id="ApisLink">API Mimari Stilleri</a>
                     <ul class="submenu" id="ApisSubmenu" style="display: none;">
-                        <li><a href="ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
-                        <li><a href="Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
-                        <li><a href="Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
-                        <li><a href="Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
-                        <li><a href="GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
+                        <li><a href="/Pages/Solid/ApiNedir.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">API Nedir ?</a></li>
+                        <li><a href="/Pages/Solid/Rpc.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">RPC API</a></li>
+                        <li><a href="/Pages/Solid/Soap.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">SOAP API</a></li>
+                        <li><a href="/Pages/Solid/Rest.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">REST API</a></li>
+                        <li><a href="/Pages/Solid/GraphQL.html" style="color: white;" onmouseover="this.style.color='darksalmon'" onmouseout="this.style.color='white'">GraphQL API</a></li>
                         <!-- İhtiyacınıza göre diğer design pattern kategorilerini ve içeriklerini buraya ekleyebilirsiniz -->
                     </ul>
                 </li>
@@ -90,58 +90,26 @@
 </div>
 <!-- Sidebar End -->
 
+
 <!-- Content Start -->
 <div class="content">
     <div class="content-inner" style="background-color: white;">
         <div class="header">
             <div class="content-inner">
-                <h3  style="font-weight: bold;">GraphQL: Sadece Gerekli Verileri Sorgulama</h3><br>
-                <p>GraphQL Nasıl Çalışır?</p>
+                <h3 style="font-weight: bold;">API Nedir?</h3><br>
+                <p>API Nasıl Çalışır?</p>
             </div>
         </div>
-        <div>   
+        <div>
             <ol>
-                <p>Gerekli personeli döndürmesi için REST API’ye bir dizi çağrı yapılması gerekir. GraphQL oyunun kurallarını değiştirmek için icat edildi.</p>
-
-                <p>GraphQL, kesin bir veri isteğinin nasıl yapılacağını açıklayan bir sözdizimidir. GraphQL’yi uygulamak, birbirine referans veren çok sayıda karmaşık varlık içeren bir uygulamanın veri modeli için buna değer.</p>
-                <img src="img/GraphQLLib.webp" width="720"> <br><br><br>
-                <p>Bugünlerde GraphQL ekosistemi, kütüphaneler ve Apollo, GraphiQL ve GraphQL Explorer gibi güçlü araçlarla genişliyor.</p>
-
-                <p>GraphQL, bir GraphQL API’sinde yapabileceğiniz tüm sorguların ve bunların döndürdüğü tüm türlerin açıklaması olan bir şema oluşturmakla başlar. Şema Tanımlama Dili’nde (SDL) güçlü yazmayı gerektirdiğinden şema oluşturma zordur.</p>
-
-                <p>Sorgulamadan önce şemaya sahip olan bir istemci, sunucunun buna yanıt verebileceğinden emin olarak sorgusunu doğrulayabilir. Arka uç uygulamasına ulaşıldığında, tüm şemaya göre bir GraphQL işlemi yorumlanır ve ön uç uygulaması için verilerle çözümlenir. Sunucuya büyük bir sorgu gönderen API, tam olarak istediğimiz verinin şekline sahip bir JSON yanıtı döndürür.</p>
-                <img src="img/GraphQl or Rest.webp" width="720"> <br><br><br>
-                <p>Bir Müşterinin yığınca bilgisiyi alıp sadece “CustomerNumber” bilgisini kullanıcaksak GraphQL API Mimarisini Kullanmak Avantajlıdır. Belli data yığınının içinden sorguladığımız verileri alıp kullanmamız için bize getirir.</p>
-                <br>
-                <h4>GraphQL Avantajları</h4><br>
-                <ul>
-                <li><strong>Yazılan Şema:</strong><br>GraphQL, neler yapabileceğini önceden yayınlar, bu da keşfedilebilirliğini artırır. Bir müşteriyi GraphQL API’sine yönlendirerek, hangi sorguların mevcut olduğunu öğrenebiliriz.</li>
-                <li><strong>Grafik Benzeri Verilere Çok İyi Uyar:</strong><br>Bağlantılı ilişkilere kadar giden ancak düz veriler için iyi olmayan veriler.</li>
-                <li><strong>Sürüm Oluşturma Yok:</strong><br>Sürüm oluşturmaya ilişkin en iyi uygulama, API’yi sürümlendirmemektir. REST birden çok API sürümü sunarken, GraphQL yeni özelliklere sürekli erişim sağlayan ve daha temiz, daha sürdürülebilir sunucu koduna katkıda bulunan, gelişen tek bir sürüm kullanır.</li>
-                <li><strong>Ayrıntılı Hata Mesajları:</strong><br>SOAP’a benzer şekilde, GraphQL meydana gelen hataların ayrıntılarını sağlar. Hata mesajı, tüm çözümleyicileri içerir ve hatalı olan tam sorgu bölümünü ifade eder.</li>
-                <li><strong>Esnek İzinler:</strong><br>GraphQL, özel bilgileri korurken belirli işlevleri seçerek açığa çıkarmaya izin verir. Bu arada, REST mimarisi verileri bölümler halinde göstermez. Ya hep ya hiç.</li>
-                </ul>
-                <br>
-                <h4>GraphQL Dezavantajları</h4><br>
-                <ul>
-                <li><strong>Performans Sorunları:</strong><br>GraphQL, gücü için karmaşıklıktan vazgeçer. Bir istekte çok fazla iç içe alan olması, sistemin aşırı yüklenmesine neden olabilir. Dolayısıyla REST, karmaşık sorgular için daha iyi bir seçenek olmaya devam ediyor.</li>
-                <li><strong>Önbelleğe Alma Karmaşıklığı:</strong><br>GraphQL, HTTP önbelleğe alma semantiğini yeniden kullanmadığından, özel bir önbelleğe alma çabası gerektirir.</li>
-                <li><strong>Pek Çok Gelişim Öncesi Eğitim:</strong><br>GraphQL niş işlemlerini ve SDL’yi çözmek için yeterli zamana sahip olmayan birçok proje, iyi bilinen REST yolunu izlemeye karar verir.</li>
-                </ul>
-                <br>
-                <h4>GraphQL kullanım durumları</h4><br>
-                <ul>
-                <li><strong>Mobil API:</strong><br>Bu durumda, ağ performansı ve tek mesaj yükü optimizasyonu önemlidir. Böylece GraphQL, mobil cihazlar için daha verimli bir veri yüklemesi sunar.</li>
-                <li><strong>Karmaşık Sistemler Ve Mikro Hizmetler:</strong><br>GraphQL, çoklu sistem entegrasyonunun karmaşıklığını kendi API’sinin arkasına gizleyebilir. Verileri birden çok yerden toplayarak, bunları tek bir küresel şemada birleştirir. Bu, özellikle eski altyapılar veya zamanla genişleyen üçüncü taraf API’ler için geçerlidir.</li>
-                </ul>
-
-                <p>Kullanım durumunuza en uygun API modeli hangisidir? Her API projesinin farklı gereksinimleri ve ihtiyaçları vardır. Genellikle, mimari seçim şunlara bağlıdır:</p>
-                <ul>
-                <li>Kullanılan programlama dili,</li>
-                <li>Geliştirmekte olduğunuz çevre,</li>
-                <li>Hem insani hem de finansal olarak ayır
-                    <br><br><br>
-            </ol>
+                <p>İki ayrı uygulamanın birbiriyle konuşması için bir aracıya ihtiyacı vardır. Bu nedenle, geliştiriciler genellikle bir sistemin diğerinin bilgilerine veya fonksiyonlarına erişmesine izin vermek için köprüler — Uygulama Programlama Arayüzleri (API'ler) — oluşturur.</p>
+                <p>Uygulamaları hızlı ve geniş ölçekte entegre etmek için API'ler, kablo üzerinden iletilen mesajların anlambilimini ve sözdizimini tanımlamak için protokoller ve/veya spesifikasyonlar kullanılarak gerçekleştirilir. Bu özellikler API mimarisini oluşturur.</p>
+                <h4 style="font-weight: bold;">API MİMARİSİ ZAMAN ÇİZELGESİ</h4><br>
+                <img src="img/Api Time.webp" width="720"> <br><br><br>
+                <h4 style="font-weight: bold;">API MİMARİ STİLLERİ</h4><br>
+                <img src="img/Api Architectural styles.webp" width="720"> <br><br><br>
+                <p>Zamanla, farklı API mimari stilleri yayınlandı. Her birinin kendi veri alışverişini standartlaştırma kalıpları vardır. Bir dizi seçenek, hangi mimari tarzın en iyi olduğu konusunda sonsuz tartışmalara yol açar.</p><br><br><br>
+            </ol> 
         </div>
         
     </div>
